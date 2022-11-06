@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+body {
+  position: relative;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.623) 0%,
+      rgba(0, 0, 0, 0.466) 100%
+    ),
+    url("./assets/bgg.jpg");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  margin: 1rem auto;
+  border: 1px solid #fff;
+  background-color: rgba(220, 219, 220, 0.39);
+  width: 70%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 0 3rem;
+  justify-content: space-between;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+.container {
+  /* height: calc(100vh - 20rem); */
+  display: grid;
+  padding: 5rem;
+  margin: auto;
+  place-items: center;
+}
+.login {
+  padding: 5rem 3rem;
+  display: grid;
+  border-radius: 1rem;
+  background-color: rgba(220, 219, 220, 0.39);
+}
+.login h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 5rem;
+}
+.btn {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #282c38;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: #fff;
+  outline: none;
+  border: none;
+  transition: background-color 0.2s ease-in;
 }
-
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  background-color: #191c24;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn svg {
+  color: #db4437;
+}
+.btn > * {
+  margin: 0 0.9rem;
+}
+.users_container {
+  gap: 2rem;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(5, 1fr);
+}
+.user-card {
+  text-align: center;
+  padding: 0.3rem 4rem;
+  border: 1px solid #fff;
+  background-color: #f1f2f560;
+}
+.user-details__container {
+  width: fit-content;
+  margin: 100px auto;
+  padding: 5rem;
+  text-align: center;
+  background-color: #cfcdcd7e;
+}
+.details-text {
+  font-size: 2rem;
+}
+.back {
+  display: inline-block;
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 3rem;
+  background-color: #191c24;
+}
+.null {
+  display: grid;
+  place-items: center;
+  margin: 10rem 0;
 }
